@@ -25,7 +25,7 @@ sh "mvn sonar:sonar"
 }
 stage("nexus"){
 steps{
-nexusArtifactUploader artifacts: [[artifactId: 'wwp', classifier: '', file: 'target/wwp-1.0.0.war', type: 'war']], credentialsId: 'tokyon', groupId: 'koddas.web.war', nexusUrl: '3.83.156.88:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'war-snap', version: '1.0.0-SNAPSHOT'
+nexusArtifactUploader artifacts: [[artifactId: 'wwp', classifier: '', file: 'target/ wwp-1.0.0-SNAPSHOT.war', type: 'war']], credentialsId: 'tokyon', groupId: 'koddas.web.war', nexusUrl: '3.83.156.88:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'war-snap', version: '1.0.0-SNAPSHOT'
 }
 }
 
