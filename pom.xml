@@ -6,6 +6,28 @@
   <packaging>war</packaging>
   <name>WAR Web Project</name>
   <description>A very simple Maven-enabled WAR web project</description>
+
+<properties>
+		<jdk.version>1.8</jdk.version>
+		<spring.version>5.1.2.RELEASE</spring.version>
+		<junit.version>4.11</junit.version>
+		<log4j.version>1.2.17</log4j.version>
+		<sonar.host.url>http://54.173.219.51:9000/</sonar.host.url>
+		<sonar.login>squ_814479f7b31279b61521be718564ab27b0e4bbde</sonar.login>
+		
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+	</properties>
+
+
+
+  
+
+
+
+
+  
   <dependencies>
   	<dependency>
   		<groupId>com.google.code.gson</groupId>
