@@ -28,6 +28,15 @@ steps{
 nexusArtifactUploader artifacts: [[artifactId: 'wwp', classifier: '', file: 'target/wwp-1.0.0.war', type: 'war']], credentialsId: 'tokyon', groupId: 'koddas.web.war', nexusUrl: '3.83.156.88:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'maven-war-app', version: '1.0.0'
 }
 }
+stage("test"){
+steps {
+deploy adapters: [tomcat9(credentialsId: 'deploy', path: '', url: 'http://54.145.111.5:8080/')], contextPath: null, war: '**/*.war'
+
+}
+}
+
+
+
 
 }
 }
