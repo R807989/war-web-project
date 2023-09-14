@@ -1,9 +1,9 @@
 pipeline {
 agent any 
 stages {
-stage{
+stage("intigration"){
 steps{
-
+git 'https://github.com/R807989/war-web-project.git'
 }
 }
 }
