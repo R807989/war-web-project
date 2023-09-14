@@ -15,5 +15,14 @@ steps{
 sh "mvn clean install package"
 }
 }
+stage("test"){
+steps {
+withSonarQubeEnv("sonar1") {
+sh "mvn sonar:sonar"
+
+}
+}
+}
+
 }
 }
